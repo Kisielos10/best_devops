@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `).join('');
             
             questionElement.innerHTML = `
-                <p>${index + 1}. ${question.question}</p>
+                <p class="question-name">${index + 1}. ${question.question}</p>
                 <div class="options">
                     ${optionsHTML}
                 </div>

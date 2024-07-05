@@ -6,7 +6,7 @@
     <title>10 Question Multiple Choice Quiz</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Comic sans-serif";
             line-height: 1.6;
             margin: 0;
             padding: 20px;
@@ -30,12 +30,37 @@
         .question {
             margin-bottom: 20px;
         }
+        .question-name {
+            font-size: 30px;
+        }
         .options {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .option:nth-child(1) {
+            background: red;
+            color: white;
+        }
+        .option:nth-child(2) {
+            background: blue;
+            color: white;
+        }
+        .option:nth-child(3) {
+            background: green;
+            color: white;
+        }
+        .option:nth-child(4) {
+            background: yellow;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: 50% 50%;
         }
         .option {
-            margin: 5px 0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
         }
         button {
             display: block;
