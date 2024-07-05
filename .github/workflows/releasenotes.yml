@@ -20,7 +20,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git checkout development
+          git checkout HEAD:development
           git add releasenotes.md
           git commit -m "Add release notes"
           git push
