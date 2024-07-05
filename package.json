@@ -1,17 +1,13 @@
 {
-  "name": "best_devops",
+  "name": "quiz-app",
   "version": "1.0.0",
-  "description": "node quiz.js",
+  "description": "A simple multiple-choice quiz application",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "echo \"No test specified\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
-  },
-  "devDependencies": {}
+    "express": "^4.17.1"
+  }
 }
