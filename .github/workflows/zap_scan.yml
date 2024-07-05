@@ -10,11 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan the web application
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
       - name: ZAP Scan
         uses: zaproxy/action-full-scan@v0.4.0
         with:
-          target: https://bestquiz.azurewebsites.net/
-
+          target: 'https://bestquiz.azurewebsites.net/'
+      
       - name: Upload ZAP Report
         uses: actions/upload-artifact@v2
         with:
