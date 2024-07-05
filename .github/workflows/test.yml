@@ -19,7 +19,7 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: npm install jest
+        run: npm install jest && npm install supertest
 
       - name: Run Jest tests
         run: npm test
