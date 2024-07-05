@@ -53,3 +53,5 @@ typings/
 
 # Optional REPL history
 .node_repl_histor
+
+.DS_Store
